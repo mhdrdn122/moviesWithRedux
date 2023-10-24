@@ -1,0 +1,26 @@
+.sectionStyle{
+    background-color: #00000007;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(179, 178, 178);
+    align-items: center
+}
+.movieInfo,.overview{
+    font-weight: 700;
+    color: #333;
+    
+}
+.movieInfo p ,.overview{
+    padding: 10px;
+    border-bottom: 1px solid #aaaaaaa1;
+    font-size: 18px;
+
+}
+
+.btnDetailes{
+    background-color: rgba(0, 0, 0, 0.9);
+    border: none;
+    color: #198754;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
