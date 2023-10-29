@@ -36,8 +36,7 @@ const NavBar = ({disabledInput}) => {
                 className="me-5 w-50"
                 aria-label="Search"
                 onChange={ (e) => { setWord(e.target.value) }}
-                onFocus={(e) => { e.target.disabled=disabledInput()}
-                }
+                //onFocus={(e) => { e.target.disabled=disabledInput()}}
               />
               <Button variant="outline-success" className="mx-2">البحث</Button>
             </Form>

@@ -15,8 +15,8 @@ import './App.css';
 function App()  {
 
   const [movies , setMovies] = useState([])
-  const hrefCounter = window.location.href.length
-  let disabledNav = false
+  // const hrefCounter = window.location.href.length
+  // let disabledNav = false
  
 
   const dispatch = useDispatch()
@@ -28,20 +28,21 @@ function App()  {
 
   useEffect( () =>  {setMovies(mov)} ,[mov] )
 
+  console.log(movies)
 
-  // Toggle  disabled input search between show all movies and show movie details
-  function disabledInput ()  {
-    if(hrefCounter>22)
-      return disabledNav = true
+  // // Toggle  disabled input search between show all movies and show movie details
+  // function disabledInput ()  {
+  //   if(hrefCounter>22)
+  //     return disabledNav = true
         
-    else
-        return disabledNav = false  
-  }
+  //   else
+  //       return disabledNav = false  
+  // }
 
   return (
   
     <div>
-     <NavBar disabledInput={disabledInput} />
+     <NavBar  />
       <Container  >
 
         <BrowserRouter >
